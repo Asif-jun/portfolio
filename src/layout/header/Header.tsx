@@ -1,9 +1,19 @@
+import styled from 'styled-components'
+import { Logo } from '../../components/logo/Logo'
+import { Menu } from '../../components/menu/Menu'
+
 export const Header = () => {
 	return (
-		<header>
-			<a href=''></a>
-		</header>
+		<StyledHeader>
+			<Logo />
+			<Menu />
+		</StyledHeader>
 	)
 }
 
-export default Header
+const StyledHeader = styled.header`
+	background: rgba(30, 25, 25, 0.7);
+	backdrop-filter: blur(10px);
+	display: flex;
+	justify-content: space-between;
+`
